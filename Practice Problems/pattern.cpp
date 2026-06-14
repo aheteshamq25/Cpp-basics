@@ -40,7 +40,7 @@ class Solution {
 
 int main(){
     Solution s;
-    s.printDiamond(0);
+    s.printDiamond(5);
     
     return 0;
 }
