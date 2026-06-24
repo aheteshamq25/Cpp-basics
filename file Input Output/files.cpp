@@ -21,9 +21,9 @@ int main(){
 
     string st = "hello world ";
     string st2 ;
-    // ofstream out("sample.text");
-    // out<<st;
-    ifstream in("sample.txt");
+    ofstream out("sample.text");
+    out<<st2;
+    // ifstream in("sample.txt");
    
     return 0;
 }

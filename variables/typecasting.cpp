@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// ******Typecasting *********
+  /******Typecasting *********/
 
 int main(){
     int a = 45;
@@ -12,6 +12,7 @@ int main(){
     cout<<"the value of b is "<<(int)b<<endl;
 
     int c = int(b);
+    cout<<"The value of C is "<<c<<endl;
     
 
 

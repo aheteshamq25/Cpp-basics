@@ -10,7 +10,8 @@ class Triangle{
         {
             for (int j = 0; j < i+1; j++)
             {
-                cout<<count++<<" ";
+                cout<<count<<" ";
+                count++;
             }
 
             cout<<endl;
@@ -23,6 +24,6 @@ class Triangle{
 
 int main(){
     Triangle t;
-    t.floydsTriangle(100);
+    t.floydsTriangle(5);
     return 0;
 }

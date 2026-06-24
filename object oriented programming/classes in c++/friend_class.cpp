@@ -13,40 +13,38 @@ public:
         return a + b;
     }
 
-    int sumRealComplex(Complex, Complex);
-    int sumComComplex(Complex, Complex);
+    int sumRealPart(Complex, Complex);
+    int sumComPart(Complex, Complex);
 };
 
 class Complex
 {
     int a, b;
     // individually declaring the function as friends
-    // friend int Calculator::sumRealComplex(Complex, Complex);
-    // friend int Calculator::sumComComplex(Complex, Complex);
+    // friend int Calculator::sumRealPart(Complex, Complex);
+    // friend int Calculator::sumComPart(Complex, Complex);
 
     // declaring whole class as friend
     friend class Calculator; 
 
 
-public:
-    void setNumber(int v1, int v2)
-    {
+    public:
+    void setNumber(int v1, int v2){
         a = v1;
         b = v2;
     }
-    void printNumber()
-    {
+    void printNumber(){
         cout << "Your number is " << a << " + " << b << "i" << endl;
     }
 };
 
-int Calculator :: sumRealComplex(Complex o1, Complex o2)
+int Calculator :: sumRealPart(Complex o1, Complex o2)
 {
     cout << "The real part of the complex is "<<(o1.a + o2.a)<<endl;
     return 0;
 }
 
-int Calculator :: sumComComplex(Complex o1, Complex o2)
+int Calculator :: sumComPart(Complex o1, Complex o2)
 {
     cout <<"The Complex part of the Complex is " <<(o1.b + o2.b)<<endl;
     return 0;
@@ -61,8 +59,8 @@ int main()
     o2.printNumber();
 
     Calculator c;
-    c.sumRealComplex(o1, o2);
-    c.sumComComplex(o1, o2);
+    c.sumRealPart(o1, o2);
+    c.sumComPart(o1, o2);
 
     return 0;
 }

@@ -37,6 +37,8 @@ int main()
     dukaan.setPrice();
     dukaan.setPrice();
     dukaan.setPrice();
+    cout<<endl;
+    cout<<"======================="<<endl;
     dukaan.displayPrice();
 
     return 0;

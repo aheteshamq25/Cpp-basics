@@ -23,7 +23,7 @@ Case 3:
 class Base1{
     int data1;
     public:
-    Base1(int i ){
+    Base1(int i){
         data1 = i;
         cout<<"The base1 constructor is called"<<endl;   
     }

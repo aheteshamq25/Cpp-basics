@@ -9,8 +9,9 @@ int main(){
     cout<<"Enter a number to get the table: ";
     cin>>num;
     do{
-        cout<<num*i<<endl;
+        cout<<num<<" * "<<i<<" = "<<num*i<<endl;
         i++;
     }while (i<=10);
+    
     
 }
